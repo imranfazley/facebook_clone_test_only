@@ -1,4 +1,4 @@
-require 'rails_helper'
+  require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   let(:valid_params) {{ name: "Josh Teng", email: "josh@na.com", password: "123456", password_confirmation: "123456"}}
@@ -49,7 +49,7 @@ RSpec.describe UsersController, type: :controller do
       end
 
       it "displays flash alert message" do
-        expect(flash[:alert]).to include "Error creating account: "
+        expect(flash[:alert]).to include "Error creating account: " 
       end
 
       it "renders new template again" do
