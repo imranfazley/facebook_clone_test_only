@@ -8,5 +8,6 @@ resource :likes
 get '/welcome' => "welcome#index"
 get '/delete' => "sessions#destroy"
 root "welcome#index"
+get '/signout' => "welcome#index", as: "signout"
 
 end
