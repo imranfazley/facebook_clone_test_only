@@ -4,7 +4,7 @@ RSpec.describe SessionsController, type: :controller do
 
   let(:user) { create(:user, password: "123456", password_confirmation: "123456") }
   let(:valid_params) {{session: {email: user.email, password: "123456", password_confirmation: "123456"}}}
-  let(:invalid_params) {{session: {email: user.email, password: "1234567", password_confirmation: "1234567"}}}
+  let(:invalid_params) {{session: {email: user.email, password: "1234567", password_confirmation: "123456"}}}
 
   describe "GET #new" do
 
