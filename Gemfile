@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.13'
 
 group :development, :test do
   gem "rspec-given"
